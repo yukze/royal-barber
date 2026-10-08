@@ -2,165 +2,166 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Royal Barber | Barber Shop în Brașov</title>
-  <meta name="description" content="Royal Barber — barber shop premium în Brașov. Tunsori, barbă și servicii de grooming într-un spațiu modern.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal Barber | Frizerie pentru bărbați în Brașov</title>
+  <meta name="description" content="Royal Barber: tuns, barbă și pachete premium într-o frizerie liniștită din Brașov. Programează-te online.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Royal Barber | Barber Shop în Brașov">
-  <meta property="og:description" content="Tunsori și servicii premium de grooming în Brașov.">
   <meta property="og:type" content="website">
+  <meta property="og:title" content="Royal Barber | Frizerie pentru bărbați în Brașov">
+  <meta property="og:description" content="Tuns precis, barbă îngrijită, fără grabă.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:locale" content="ro_RO">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Fonturi: Instrument Serif (titluri) + Manrope (text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+<body id="top">
 
-<body>
-
-  <header>
-    <div class="container">
-      <nav aria-label="Navigație principală">
-        <a class="logo" href="#">ROYAL<span>.</span></a>
-
-        <button class="menu-btn" id="menuBtn" type="button" aria-label="Deschide meniul">
-          MENU
-        </button>
-
-        <ul class="nav-links" id="navLinks">
+  <!-- ===== ANTET ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="brand">Royal Barber</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Deschide meniul"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav" aria-label="Navigare principală">
+        <ul>
           <li><a href="#servicii">Servicii</a></li>
           <li><a href="#despre">Despre</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#programare">Programare</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#recenzii">Recenzii</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#programare" class="btn btn--gold btn--small">Programează-te</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-
+    <!-- ===== 1. HERO: fotografie pe toată lățimea ===== -->
     <section class="hero">
-      <div class="container hero-content">
-        <div class="eyebrow">Barber Shop · Brașov</div>
-        <h1>Sharp cuts.<br>Royal standards.</h1>
-        <p>
-          Tunsori, barbă și grooming premium într-un spațiu modern,
-          creat pentru cei care apreciază atenția la detalii.
-        </p>
-
-        <div class="buttons">
-          <a class="btn btn-primary" href="#programare">Programează-te</a>
-          <a class="btn btn-secondary" href="#servicii">Vezi serviciile</a>
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=80" alt="Frizer lucrând la un tuns într-o frizerie clasică">
+      <div class="container hero__content">
+        <h1>Tuns precis.<br>Barbă îngrijită.</h1>
+        <p>O frizerie liniștită din Brașov, unde fiecare programare are timpul ei și fiecare detaliu e făcut cu grijă.</p>
+        <div class="actions">
+          <a href="#programare" class="btn btn--gold">Programează-te</a>
+          <a href="#servicii" class="btn btn--line">Vezi serviciile</a>
         </div>
       </div>
     </section>
 
-    <section class="services" id="servicii">
+    <!-- ===== 2. SERVICII: meniu tipografic ===== -->
+    <section class="section" id="servicii">
       <div class="container">
-        <div class="section-label">Servicii</div>
-        <h2>Simple. Precise. Personal.</h2>
-        <p class="section-intro">
-          Servicii de grooming pentru un look îngrijit, adaptate stilului tău.
-        </p>
+        <h2>Servicii</h2>
+        <p class="intro">Prețurile sunt fictive, create pentru acest demo.</p>
+        <ul class="menu">
+          <li class="menu__item"><div><h3>Tuns</h3><p>Foarfecă sau mașină, spălat și aranjat.</p></div><span class="menu__price">90 RON</span></li>
+          <li class="menu__item"><div><h3>Tuns + barbă</h3><p>Ședință completă, cu contur de barbă.</p></div><span class="menu__price">150 RON</span></li>
+          <li class="menu__item"><div><h3>Barbă</h3><p>Aducere la formă, contur și ulei de îngrijire.</p></div><span class="menu__price">70 RON</span></li>
+          <li class="menu__item"><div><h3>Tuns copii</h3><p>Până la 12 ani.</p></div><span class="menu__price">60 RON</span></li>
+          <li class="menu__item menu__item--premium"><div><h3>Pachet premium</h3><p>Tuns, barbă, bărbierit cu prosop cald și îngrijire a tenului. Aproximativ 90 de minute.</p></div><span class="menu__price">230 RON</span></li>
+        </ul>
+      </div>
+    </section>
 
-        <div class="service-grid">
-          <article class="service-card">
-            <h3>Tuns</h3>
-            <p>Tuns clasic sau modern, adaptat formei feței și stilului tău.</p>
-            <div class="price">60 RON</div>
-          </article>
-
-          <article class="service-card">
-            <h3>Tuns + Barbă</h3>
-            <p>Pachet complet pentru un look curat și bine definit.</p>
-            <div class="price">90 RON</div>
-          </article>
-
-          <article class="service-card">
-            <h3>Barbă</h3>
-            <p>Contur, ajustare și finisare pentru o barbă bine definită.</p>
-            <div class="price">40 RON</div>
-          </article>
-
-          <article class="service-card">
-            <h3>Tuns copii</h3>
-            <p>O tunsoare simplă și atent realizată pentru cei mici.</p>
-            <div class="price">50 RON</div>
-          </article>
-
-          <article class="service-card">
-            <h3>Skin Fade</h3>
-            <p>Fade precis, realizat gradual pentru un rezultat curat.</p>
-            <div class="price">70 RON</div>
-          </article>
-
-          <article class="service-card">
-            <h3>Royal Package</h3>
-            <p>Tuns + barbă + styling pentru o experiență completă.</p>
-            <div class="price">110 RON</div>
-          </article>
+    <!-- ===== 3. DESPRE ===== -->
+    <section class="section section--panel" id="despre">
+      <div class="container about">
+        <h2>O frizerie făcută fără grabă</h2>
+        <div class="about__cols">
+          <div>
+            <p>Royal Barber s-a deschis în 2019, într-o clădire veche din Brașov, cu trei scaune și o regulă simplă: un client, un frizer, timp suficient.</p>
+            <p>Echipa lucrează cu unelte sterilizate după fiecare client și cu produse profesionale pentru păr și barbă. Înainte de primul tăiat, discutăm ce îți dorești și ce se potrivește cu forma feței tale.</p>
+            <p>Nu promitem minuni. Promitem o programare respectată și un rezultat pe care îl poți întreține singur acasă.</p>
+          </div>
+          <figure class="frame about__img"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80" alt="Frizer tăind părul unui client" loading="lazy"></figure>
         </div>
       </div>
     </section>
 
-    <section id="despre">
-      <div class="container about-grid">
-        <div class="about-copy">
-          <div class="section-label">Despre Royal Barber</div>
-          <h2>Mai mult decât o tunsoare.</h2>
-          <p>
-            Royal Barber este un concept fictiv creat ca demo pentru un
-            barber shop premium din Brașov.
-          </p>
-          <p>
-            Ideea este simplă: servicii bine executate, atenție la detalii
-            și o experiență relaxată de fiecare dată când intri pe ușă.
-          </p>
-          <a class="btn btn-primary" href="#programare">Programează-te</a>
+    <!-- ===== 4. GALERIE: bandă care se derulează ===== -->
+    <section class="section" id="galerie">
+      <div class="container gallery__head">
+        <h2>Galerie</h2>
+        <div class="strip__controls">
+          <button class="strip__btn" data-dir="-1" aria-label="Imaginile anterioare">&lsaquo;</button>
+          <button class="strip__btn" data-dir="1" aria-label="Imaginile următoare">&rsaquo;</button>
         </div>
+      </div>
+      <div class="strip" tabindex="0" aria-label="Galerie de imagini, derulează lateral">
+        <figure class="frame strip__item"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80" alt="Aranjat barbă" loading="lazy"></figure>
+        <figure class="frame strip__item strip__item--wide"><img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=1000&q=80" alt="Interiorul frizeriei" loading="lazy"></figure>
+        <figure class="frame strip__item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80" alt="Tuns de precizie" loading="lazy"></figure>
+        <figure class="frame strip__item"><img src="https://images.unsplash.com/photo-1532710093739-9470acff878f?auto=format&fit=crop&w=700&q=80" alt="Bărbierit cu lama" loading="lazy"></figure>
+        <figure class="frame strip__item"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=700&q=80" alt="Unelte de frizerie" loading="lazy"></figure>
+      </div>
+    </section>
 
-        <div class="about-visual" aria-label="Imagine demonstrativă Royal Barber">
-          ROYAL BARBER
+    <!-- ===== 5. RECENZII: citate puse unul sub altul ===== -->
+    <section class="section section--panel" id="recenzii">
+      <div class="container">
+        <h2>Ce spun clienții</h2>
+        <p class="intro">Recenzii fictive, create pentru acest demo.</p>
+        <div class="quotes">
+          <blockquote class="quote"><p>Cel mai atent tuns pe care l-am avut. Mi-au explicat ce merge cu părul meu și a ieșit exact cum trebuie.</p><footer>Alexandru M.</footer></blockquote>
+          <blockquote class="quote"><p>Punctuali, curat, fără grabă. Bărbieritul cu prosop cald merită încercat măcar o dată.</p><footer>Vlad P.</footer></blockquote>
+          <blockquote class="quote"><p>Vin cu fiul meu și amândoi plecăm mulțumiți. Programarea merge simplu și ora este respectată.</p><footer>Mihai T.</footer></blockquote>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="programare">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <div class="section-label">Programare</div>
-          <h2>Următorul tău look începe aici.</h2>
-          <p>
-            Pentru demo, butonul de mai jos folosește un număr fictiv.
-            Într-un proiect real, acesta ar fi înlocuit cu datele clientului.
-          </p>
-          <a class="btn btn-primary" href="tel:+40000000000">Sună pentru programare</a>
+    <!-- ===== 6 + 7. PROGRAM, LOCAȚIE, CONTACT ===== -->
+    <section class="section" id="program">
+      <div class="container visit">
+        <div>
+          <h2>Program</h2>
+          <table class="hours"><tbody>
+            <tr data-days="1,2,3,4,5"><th scope="row">Luni - Vineri</th><td>10:00 - 20:00</td></tr>
+            <tr data-days="6"><th scope="row">Sâmbătă</th><td>10:00 - 16:00</td></tr>
+            <tr data-days="0"><th scope="row">Duminică</th><td>Închis</td></tr>
+          </tbody></table>
+          <address class="contact" id="contact">
+            <p>Strada Exemplu 7<br>Brașov, România</p>
+            <p><a href="tel:+40775219949">+40 775 219 949</a><br><a href="mailto:contact@royalbarber.example">contact@royalbarber.example</a></p>
+          </address>
         </div>
-
-        <div id="contact">
-          <ul class="contact-list">
-            <li><strong>Adresă:</strong> Brașov, România</li>
-            <li><strong>Telefon:</strong> +40 000 000 000</li>
-            <li><strong>Email:</strong> contact@royalbarber.ro</li>
-            <li><strong>Luni - Vineri:</strong> 09:00 – 20:00</li>
-            <li><strong>Sâmbătă:</strong> 09:00 – 17:00</li>
-            <li><strong>Duminică:</strong> Închis</li>
-          </ul>
+        <!-- Hartă Google Maps. Pentru altă locație, înlocuiește valoarea src cu cea de la Google
+             (Google Maps > Share > Embed a map > Copy HTML). -->
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11157.729672087231!2d25.578879473699864!3d45.64213728916719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b7ae645555f%3A0xb703bb5d36a41691!2zUGlhyJthIFNmYXR1bHVpLCBCcmHImW92!5e0!3m2!1sro!2sro!4v1791403660124!5m2!1sro!2sro" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Harta locației Royal Barber"></iframe>
         </div>
       </div>
     </section>
 
+    <!-- ===== 8. PROGRAMARE: bandă aurie ===== -->
+    <section class="booking" id="programare">
+      <div class="container booking__inner">
+        <h2>Ai un loc rezervat în scaunul nostru</h2>
+        <!-- WhatsApp: numărul este în format internațional, fără + și fără spații -->
+        <a href="https://wa.me/40775219949?text=Bun%C4%83%2C%20a%C8%99%20dori%20o%20programare." class="btn btn--dark btn--large" target="_blank" rel="noopener">Programează-te acum</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <div>© 2026 Royal Barber. Demo website.</div>
-      <div>Brașov · Romania</div>
+  <!-- ===== 9. SUBSOL ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><p class="brand">Royal Barber</p><p>Frizerie pentru bărbați, Brașov.</p></div>
+      <nav aria-label="Navigare subsol"><ul><li><a href="#servicii">Servicii</a></li><li><a href="#despre">Despre</a></li><li><a href="#galerie">Galerie</a></li><li><a href="#program">Program</a></li></ul></nav>
+      <div>
+        <p>+40 775 219 949<br>contact@royalbarber.example</p>
+        <!-- Înlocuiește # cu linkurile reale -->
+        <ul class="social"><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">TikTok</a></li></ul>
+      </div>
     </div>
+    <p class="container footer__copy">© 2026 Royal Barber. Site demonstrativ, toate datele sunt fictive.</p>
   </footer>
-
-    <script src="script.js"></script>
-
 
 </body>
 </html>
